@@ -436,7 +436,10 @@ $fs-200: var(--fs-200);
     font-size: 2rem;
     aspect-ratio: 1;
     // padding: 4rem;
-    padding: clamp(3rem, 6.5vw, 4.5rem);
+    // padding: clamp(3rem, 6.5vw, 4.5rem);
+    // width: 17.49rem;
+    // width: 14.49rem;
+    width: clamp(14.49rem, 18.9vw, 17.49rem);
     place-items: center;
     border-radius: 50%;
     text-decoration: none;
@@ -521,14 +524,14 @@ $fs-200: var(--fs-200);
         right: 2rem;
         background: transparent;
         border: 0;
-        background-image: url(/space-tourism-website-main/images/shared/icon-hamburger.svg);
+        background-image: url(../images/shared/icon-hamburger.svg);
         background-repeat: no-repeat;
         background-position: center;
         width: 1.5rem;
         aspect-ratio: 1;
 
         &[aria-expanded="true"] {
-            background-image: url(/space-tourism-website-main/images/shared/icon-close.svg);
+            background-image: url(../images/shared/icon-close.svg);
         }
 
         &:focus-visible {
