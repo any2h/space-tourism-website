@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Space tourism website</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body class="crew">
+
+    <a class="skip-to-content" href="#main">Skip to content</a>
+
+    <header class="header flex">
+
+        <div>
+            <img src="./images/shared/logo.svg" alt="space tourism logo" class="logo">
+        </div>
+
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span
+                class="sr-only">Menu</span></button>
+
+        <nav>
+            <ul id="primary-navigation" class="primary-navigation underline-indicators flex" data-state="closed">
+                <li><a href="index.html" class="barlow-cond uppercase letter-spacing-2 text-white"><span
+                            aria-hidden="true">00</span> Home</a>
+                </li>
+                <li><a href="destination.html" class="barlow-cond uppercase letter-spacing-2 text-white"><span
+                            aria-hidden="true">01</span>
+                        Destination</a>
+                </li>
+                <li class="active">
+                    <a href="crew.html" class="barlow-cond uppercase letter-spacing-2 text-white"><span
+                            aria-hidden="true">02</span> Crew</a>
+                </li>
+                <li>
+                    <a href="technology.html" class="barlow-cond uppercase letter-spacing-2 text-white"><span
+                            aria-hidden="true">03</span>
+                        Technology</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main id="main" class="grid-container grid-container--crew flow">
+
+        <h1 class="numbered-title">
+            <span aria-hidden="true">02</span>
+            Meet your crew
+        </h1>
+
+        <div class="dot-indicators flex" aria-label="crew member list" role="tablist">
+            <button aria-selected="true" aria-controls="commander-tab" role="tab" tabindex="0" data-image="commander-image"><span class="sr-only">The commander</span></button>
+            <button aria-selected="false" aria-controls="engineer-tab" role="tab" tabindex="-1" data-image="engineer-image"><span class="sr-only">The crew engineer</span></button>
+            <button aria-selected="false" aria-controls="pilot-tab" role="tab" tabindex="-1" data-image="pilot-image"><span class="sr-only">The pilot</span></button>
+            <button aria-selected="false" aria-controls="specialist-tab" role="tab" tabindex="-1" data-image="specialist-image"><span class="sr-only">The mission specialist</span></button>
+        </div>
+
+        <article class="crew-info flow" id="commander-tab" role="tabpanel" tabindex="0">
+            <h2 class="bellefair uppercase">Commander</h2>
+            <p class="bellefair fs-700 uppercase">Douglas Hurley</p>
+            <p>Douglas Gerald Hurley is an American engineer, former Marine Corps pilot
+                and former NASA astronaut. He launched into space for the third time as
+                commander of Crew Dragon Demo-2.
+            </p>
+        </article>
+
+        <article class="crew-info flow" id="engineer-tab" role="tabpanel" tabindex="0" hidden>
+            <h2 class="bellefair uppercase">Flight Engineer</h2>
+            <p class="bellefair fs-700 uppercase">Anousheh Ansari</p>
+            <p>Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. 
+                Ansari was the fourth self-funded space tourist, the first self-funded woman to 
+                fly to the ISS, and the first Iranian in space.
+            </p>
+        </article>
+
+        <article class="crew-info flow" id="pilot-tab" role="tabpanel" tabindex="0" hidden>
+            <h2 class="bellefair uppercase">Pilot</h2>
+            <p class="bellefair fs-700 uppercase">Victor Glover</p>
+            <p>Pilot on the first operational flight of the SpaceX Crew Dragon to the 
+                International Space Station. Glover is a commander in the U.S. Navy where 
+                he pilots an F/A-18.He was a crew member of Expedition 64, and served as a 
+                station systems flight engineer.
+            </p>
+        </article>
+
+        <article class="crew-info flow" id="specialist-tab" role="tabpanel" tabindex="0" hidden>
+            <h2 class="bellefair uppercase">Mission Specialist</h2>
+            <p class="bellefair fs-700 uppercase">Mark Shuttleworth</p>
+            <p>Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind 
+                the Linux-based Ubuntu operating system. Shuttleworth became the first South 
+                African to travel to space as a space tourist.
+            </p>
+        </article>
+
+        <picture id="commander-image">
+            <source srcset="./images/crew/image-douglas-hurley.webp" type="image/webp">
+            <img src="./images/crew/image-douglas-hurley.png" alt="Douglas Hurley">
+        </picture>
+
+        <picture id="engineer-image" hidden>
+            <source srcset="./images/crew/image-anousheh-ansari.webp" type="image/webp">
+            <img src="./images/crew/image-anousheh-ansari.png" alt="Anousheh Ansari">
+        </picture>
+
+        <picture id="pilot-image" hidden>
+            <source srcset="./images/crew/image-victor-glover.webp" type="image/webp">
+            <img src="./images/crew/image-victor-glover.png" alt="Victor Glover">
+        </picture>
+
+        <picture id="specialist-image" hidden>
+            <source srcset="./images/crew/image-mark-shuttleworth.webp" type="image/webp">
+            <img src="./images/crew/image-mark-shuttleworth.png" alt="Mark Shuttleworth">
+        </picture>
+
+    </main>
+
+    <script src="nav.js" defer></script>
+    <script src="tabs.js" defer></script>
+</body>
+
+</html>

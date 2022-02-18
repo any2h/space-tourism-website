@@ -1,0 +1,80 @@
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* reset default margins */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* headings font-weight normal */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+}
+
+/* set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* set up body */
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  background-color: hsl(230, 35%, 7%);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* make images easier to work with */
+// picture,
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
