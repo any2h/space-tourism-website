@@ -531,6 +531,7 @@ $fs-200: var(--fs-200);
         aspect-ratio: 1;
 
         &[aria-expanded="true"] {
+            position: fixed;
             background-image: url(../images/shared/icon-close.svg);
         }
 
