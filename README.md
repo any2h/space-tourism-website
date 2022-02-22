@@ -23,12 +23,12 @@ Users should be able to:
 
 ### Screenshot
 
-![Space desktop page](../screenshots/space-desktop.jpeg)
-![Crew desktop page](../screenshots/crew-desktop.jpeg)
-![Crew tablet page](../screenshots/crew-tablet.jpeg)
-![Technology tablet page](../screenshots/technology-tablet.jpeg)
-![Destination mobile page](../screenshots/destination-mobile.jpeg)
-![Technology mobile page](../screenshots/technology-mobile.jpeg)
+![Space desktop page](./screenshots/space-desktop.jpeg)
+![Crew desktop page](./screenshots/crew-desktop.jpeg)
+![Crew tablet page](./screenshots/crew-tablet.jpeg)
+![Technology tablet page](./screenshots/technology-tablet.jpeg)
+![Destination mobile page](./screenshots/destination-mobile.jpeg)
+![Technology mobile page](./screenshots/technology-mobile.jpeg)
 
 ### Links
 
